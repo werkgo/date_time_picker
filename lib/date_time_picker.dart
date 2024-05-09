@@ -872,11 +872,7 @@ class _DateTimePickerState extends FormFieldState<String> {
           lsHour = '00';
         }
 
-        if (!widget.use24HourFormat) {
-          set12HourTimeValues(ltTimePicked);
-        } else {
-          _sTime = '$lsHour:$lsMinute';
-        }
+        _sTime = '$lsHour:$lsMinute';
 
         _tTime = ltTimePicked;
       } else {
